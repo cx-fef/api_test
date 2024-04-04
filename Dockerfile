@@ -1,6 +1,6 @@
 FROM openjdk:23-slim
 
-LABEL Name="Louis API Sec + Dast Demo App" Version=1.0.0
+LABEL Name="Cx API Sec + Dast Demo App" Version=1.0.0
 
 COPY target/sanityScan-0.0.1-SNAPSHOT.jar .
 
