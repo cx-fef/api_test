@@ -3,8 +3,8 @@ env:
         - authentication: {}
           excludePaths: []
           includePaths:
-            - http://localhost:5000/.*
-            - http://localhost:5000/*
+            - http://localhost:8888/.*
+            - http://localhost:8888/*
           name: Default Context
           sessionManagement:
             method: cookie
@@ -12,7 +12,7 @@ env:
           technology:
             exclude: []
           urls:
-            - http://localhost:5000/
+            - http://localhost:8888/
           users: []
     parameters:
         failOnError: true
@@ -33,7 +33,7 @@ jobs:
         apiFile: /demo/openapi.json
         apiUrl: ""
         context: Default Context
-        targetUrl: http://localhost:5000
+        targetUrl: http://localhost:8888
       type: openapi
     - name: passiveScan-wait
       parameters: {}
@@ -58,7 +58,7 @@ jobs:
     - name: report
       parameters:
         reportDescription: ""
-        reportDir: /demo/test_output/dast-output
+        reportDir: /dast-test/dast-report-output
         reportFile: ZAP-Report
         reportTitle: ZAP Scanning Report
         template: traditional-json-plus
