@@ -33,7 +33,7 @@ jobs:
         apiFile: /demo/openapi.json
         apiUrl: ""
         context: Default Context
-        targetUrl: https://49ff-218-48-189-21.ngrok-free.app
+        targetUrl: http://localhost:5000
       type: openapi
     - name: passiveScan-wait
       parameters: {}
@@ -58,7 +58,7 @@ jobs:
     - name: report
       parameters:
         reportDescription: ""
-        reportDir: /demo/test_output/dast-output-826580319
+        reportDir: /demo/test_output/dast-output
         reportFile: ZAP-Report
         reportTitle: ZAP Scanning Report
         template: traditional-json-plus
