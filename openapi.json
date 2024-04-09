@@ -5,7 +5,7 @@
 		"version": "1.0.0",
 		"title": "SANITY SCAN"
 	},
-	"host": "localhost:8080",
+	"host": "localhost:8888",
 	"basePath": "/",
 	"tags": [
 		{
