@@ -30,7 +30,7 @@ jobs:
       type: passiveScan-config
     - name: openapi
       parameters:
-        apiFile: /demo/openapi.json
+        apiFile: /dast-test/openapi.json
         apiUrl: ""
         context: Default Context
         targetUrl: http://localhost:8888
