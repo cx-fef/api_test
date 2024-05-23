@@ -60,6 +60,7 @@ jobs:
           path: |
             ./cx_result.sarif
       - name: Upload SARIF file
+        # change to use version 3 since this v2 goes away Dec. 2024
         uses: github/codeql-action/upload-sarif@v3
         with:
           # Path to SARIF file relative to the root of the repository
